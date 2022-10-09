@@ -1,9 +1,11 @@
 body {
+  background-color: #e2e8f0;
   text-align: center;
-  margin: 0px;
+  margin: 0;
 }
 
 #title {
+  color: #252627;
   font-weight: bold;
   margin: 30px;
   display: flex;
@@ -21,13 +23,11 @@ body {
 
 button {
   font-size: 18px;
-  background-color: #e7e7e7;
-  color: black;
-  box-sizing: border-box;
-  border: 3px solid #bdbdbd;
-  border-radius: 4px;
+  color: #252627;
+  background-color: #ced5dd;
+  border: 2.5px solid #999da3;
+  border-radius: 5px;
   padding: 12px 20px;
-  margin-left: 5px;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
   -khtml-user-select: none; /* Konqueror HTML */
@@ -39,36 +39,17 @@ button {
 }
 
 button:hover {
-  background-color: #dbdbdb;
-  border: 3px solid #a3a3a3;
+  background-color: #bcc3ca;
 }
 
-#genButton {
-  margin-left: 0px;
-}
-
-#copyIcon {
-  display: block;
-}
-
-#copiedIcon {
-  display: none;
+#copyButton {
+  margin-left: 8px;
 }
 
 #faceText {
-  font-size: 110px;
-  margin: 0px;
-  margin-top: 130px;
-}
-
-#footer {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-}
-
-#homeButton {
-  margin-left: 0px;
+  color: #252627;
+  font-size: 100px;
+  margin-top: 100px;
 }
 
 @font-face {
