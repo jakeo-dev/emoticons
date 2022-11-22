@@ -6,27 +6,30 @@
 
     <link href='style.css' rel='stylesheet'>
 
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap' rel='stylesheet'>
+
     <meta property='og:title' content='Emoticon Generator (Kaomoji)'>
     <meta name='theme-color' content='#949494'>
 </head>
 
-<body>
+<body class='bg-slate-200 block text-slate-900 p-24 px-6 lg:px-40 xl:px-96 font-LexendDeca'>
 
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
-    <h1 id='title'>Emoticon Generator</h1>
-
-    <div id='top'>
-        <button onclick='gen()' class='tButton' id='genButton'>Generate</button>
-        <button onclick='copy()' onmouseout='mouseOut()' class='tButton' id='copyButton'>Copy</button>
+    <div class='w-full mb-6'>
+        <h1 class='bg-slate-800 text-4xl text-slate-200 rounded-md p-4'>Emoticon Generator</h1>
     </div>
 
-    <p id='faceText'></p>
+    <div class='mb-20'>
+        <button onclick='gen()' class='button' id='gen'>Generate</button>
+        <button onclick='copy()' onmouseout='mouseOut()' class='button ml-3' id='copy'>Copy</button>
+    </div>
 
-    <!-- <div id='footer'>
-        <button onclick='home()' class='fButton' id='homeButton'>Jorch.xyz</button>
-        <button onclick='tweet()' class='fButton' id='tweetButton'>Tweet</button>
-    </div> -->
+    <div>
+        <h2 id='faceText' class='text-5xl md:text-8xl'></h2>
+    </div>
 
 </body>
 

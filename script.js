@@ -1,4 +1,4 @@
-console.log('v1.3.8');
+console.log('v1.3.9');
 console.log('whats new: \n Design improvements');
 
 window.onload = gen;
@@ -226,10 +226,9 @@ var extraArray1 = [
     ' ♬ ',
     ' ✿ ',
     ' ⋆ ',
-    ' ⁈ '
+    ' ⁈ ',
+    ' ╬ '
 ]
-
-// ╬ angry
 
 var blushArray1 = [
     ' : ',
@@ -370,16 +369,16 @@ function gen() {
 
 document.body.onkeyup = function (event) {
     if (event.keyCode == 32) {
-        document.getElementById('genButton').click();
+        document.getElementById('gen').click();
     }
 }
 
 function copy() {
     navigator.clipboard.writeText(document.getElementById('faceText').innerText.replace('&nbsp;', '').replace('&nbsp;', ''));
 
-    document.getElementById('copyButton').innerText = 'Copied!';
+    document.getElementById('copy').innerText = 'Copied!';
 }
 
 function mouseOut() {
-    document.getElementById('copyButton').innerText = 'Copy';
+    document.getElementById('copy').innerText = 'Copy';
 }
