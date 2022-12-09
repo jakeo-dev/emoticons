@@ -1,5 +1,5 @@
-console.log('v1.3.9');
-console.log('whats new: \n Design improvements');
+/* console.log('v1.3.9');
+console.log('whats new: \n Design improvements'); */
 
 window.onload = gen;
 
